@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Упражнение 5
+  /*var arr=[], S=0
+    for (var i=0; i<=4; i++){
+  arr[i]=+prompt("Введите значение arr[i]","")
+  console.log("arr " + i+ " "+ arr[i]);
+   S=S+arr[i]
+  }
+  console.log("Сумма чисел:"+S);*/
+  //Упражнение 6
+  /*var P=1, arr=[], A= +prompt("Введите длину массива","")
+for (i=0;i<A;i++){
+  arr[i]=Math.round(Math.random()*20)
+}
+console.log(arr);
+for (i=0;i<arr.length;i++){
+  P = P * arr[i]
+}
+console.log(P);*/
+//Упражнение 7
+/*var arr=[],S=0,cnt=0
+for(i=0;i<5;i++){
+  arr[i]= +prompt("Введите значение arr[i]","")
+  console.log("arr"+i+"="+arr[i]);
+}
+for(i=0;i<arr.length;i++)
+   if(arr[i]<0){
+     S= S+arr[i]
+     cnt++
+   }
+console.log(S/cnt);*/
+//Упражнение 8
+/*var arr=[],  B=false
+var key = +prompt("Введите искомое значение", "")
+for(i=0;i<5;i++){
+   arr[i]=Math.round(Math.random()*7)
+}
+console.log(arr);
+for(i=0;i<arr.length;i++){
+  if(arr[i] == key){
+     console.log("индексы совпадения:" + i );
+    }
+    if(arr[i]!= key){
+    console.log("Искомого значения нет");
+  }
+}*/
+//Упражнение 9
+/*
+var A=[]
+var B=[], C=[]
+for (i=0;i<5;i++){
+  A[i]=+prompt("Введите A[i]","")
+}
+for(i=0;i<A.length;i++)
+if(A[i]>0) B.push(A[i])
+else if (A[i]<0) C.push(A[i])
+console.log(A);
+console.log("Положительные числа: " + B);
+console.log("Отрицательные числа: " + C);*/
+//Упражнение 10
+/*var A=[],B=[], C=[]
+for(i=0;i<5;i++){
+   A[i]=Math.round(Math.random()*7)
+   B[i]=+prompt("Введите значение B[i]","")
+   C.push(A[i]+B[i])}
+console.log("Массив A="+A);
+console.log("Массив B="+B);
+console.log("Массив C="+C);*/
+//Упражнение 11
+var arr= [],number1= 0, number2 = 0
+var A = +prompt("Введите длину массива","")
+for (i=0;i<A;i++){
+   arr[i]= Math.round(Math.random()*25-5)}
+for (i=0;i<5;i++){
+  if(arr[i]>0 & arr[i]>number2)
+  number2= arr[i]
+  else {
+    if(arr[i]<0 & arr[i]<number1)
+    number1= arr[i]
+  }
+}
+console.log(arr);
+console.log("Наименьшее число " + number1);
+console.log("Наибольшее число " + number2);
+  </script>
+</body>
+</html>
